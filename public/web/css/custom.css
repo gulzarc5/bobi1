@@ -1,0 +1,475 @@
+.p-0{
+	padding: 0
+}
+.flex{
+	display: inline-flex;
+}
+.flex-center{
+	display: inline-flex;
+    justify-content: center;
+}
+.header-img img{
+    width: 17%;
+    margin-right: 10px;
+}
+.header-img a{
+    color: #444444;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .3s;
+}
+.header-img:hover a{
+    color: #f07c29;
+    text-decoration: underline;
+}
+.margin-mobile{
+	background-color: #f07c29;
+	border-color: #f07c29;
+	padding: 1px 25px;
+	font-weight: 500;
+}
+.margin-mobile:hover,.margin-mobile:active,.margin-mobile:focus{
+	color: #000!important;
+	background-color: #ffffff;
+	border-color: #f07c29;
+	padding: 1px 25px;
+}
+.product-link .product-button {
+	float:none
+}
+.book-list .product-img a img {
+    height: 180px;
+    padding: 0 10px;
+}
+.semi-name {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.new-books{
+	border: solid 1px #fff;
+}
+.new-books:hover{
+	border: solid 1px #f07c29;
+}
+.project-page .product-wrapper{
+	background: #fff;
+	-webkit-box-shadow: 0px 0px 15px 9px rgba(230,230,230,0.69);
+	-moz-box-shadow: 0px 0px 15px 9px rgba(230,230,230,0.69);
+	box-shadow: 0px 0px 15px 9px rgba(230,230,230,0.69);
+	border-color: #f07c2994;
+}
+.project-page .product-wrapper:hover{
+	border: solid 1px #f07c29;
+	background: #f7f8fa;
+	-webkit-box-shadow: 0px 0px 19px 9px rgba(250,190,37,0.43);
+	-moz-box-shadow: 0px 0px 19px 9px rgba(250,190,37,0.43);
+	box-shadow: 0px 0px 19px 9px rgba(250,190,37,0.43);
+}
+.project-page .margin-mobile{
+	background-color: #f07c29;border-color: #f07c29;padding: 6px 33px;font-weight: 500;
+}
+.project-page .margin-mobile:hover,
+.project-page .margin-mobile:active,
+.project-page .margin-mobile:focus{
+	color: #000;background-color: #ffffff;border-color: #f07c29;padding: 6px 31px;
+}
+.user-detail .checkbox-form, .login-form, .billing-fields{
+	padding: 28px 50px;
+    background: #f6f5f5;
+    border-radius: 10px;
+	border: 2px dashed #f07c2999;
+}
+.select-add .checkbox-form {
+	border: 2px dashed #f07c2999;
+    border-radius: 10px; 
+    background-color: #f6f5f5;
+}
+.select-add .row {
+	margin: 0; 
+}
+.select-add .row p {
+	margin-bottom: 2px; 
+}
+.select-add .checkout-form-list {
+    clear: both;
+    margin: 30px;
+}
+.select-add .checkout-form-list button{
+    margin-right: 5px;
+}
+.icon-content{
+	padding: 0;
+    padding-left: 7px;
+}
+.add-ship-addrs .checkout-form-list {
+    margin: 15px;
+}
+.loader-spin{
+	font-size: 80px;
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    color: #f07c29
+}
+.single-register .check input {
+	height: auto;
+	width: auto;
+	margin-right: 5px;
+}
+.single-register .check .option {
+    width: 50%;
+	float: left;
+}
+.orders .checkbox-form{
+	padding: 10px 0;
+}
+.orders .checkbox-form .product-info-area .nav-tabs{
+	margin: 0 20px;
+}
+.orders .checkbox-form .product-info-area ul .ntab{
+	float: right;
+}
+.orders .checkbox-form .product-info-area .tab-content {
+	border: none;
+}
+.orders .checkbox-form .product-info-area .tab-content .valu {
+	background-color: #fff;
+	padding: 10px 0;
+	border: 1px solid #ddd;
+}
+.orders .checkbox-form .product-info-area .order-content h4{
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	font-family: 'Rufina', serif;
+}
+.orders .checkbox-form .product-info-area .order-content p span{
+	color: #000;
+}
+.orders .checkbox-form .product-info-area .price-final span{
+	color: #f07c29;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'arial', serif;
+    font-weight: 400;
+}
+.status h6{
+	display: inline-block;
+    color: #fff;
+    padding: 3px 7px;
+    border-radius: 3px;
+}
+.orders .checkbox-form .product-info-area .order-content a {
+	background-color: #e42222;
+	color: #fff;
+	padding: 4px 8px;
+    border-radius: 3px;
+}
+.orders .checkbox-form .product-info-area .order-content button {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 6px;
+    border: 3px solid;
+}
+.quantity {
+    text-align: center;
+}
+.quantity input{
+	width: 23%;
+    height: 10%;
+    text-align: center;
+}
+.del{background-color: #109e10}
+.pen{background-color: #10c19d}
+.can{background-color: #e42222}
+.orders .checkbox-form h5{
+	text-align: center;
+    margin:0 10px 20px;
+}
+.bdr{
+	border-bottom: 1px solid #8f8585;
+	margin: 10px; 
+}
+.thanks h1{
+    font-size: 72px;
+    text-align: center;
+    font-family: 'Rufina', serif;
+}
+.thanks button{
+    border-radius: 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: capitalize;
+    font-family: 'Rufina', serif;
+    font-weight: 400;
+    transition: .3s;
+    background-color: #f07c29;
+    border-color:  #f07c29;
+    border: 1px solid;
+    padding: 6px 14px;
+}
+.thanks button:hover {
+    background-color: #333;
+    border-color: #333;
+}
+.thanks p{
+     font-size: 13.7px;
+}
+.thanks i{
+     font-size: 75px;
+     color: #0055a5b0;
+     width: 100%;
+}
+/*=====================================
+				Menbership
+=======================================*/
+
+.membership .panel
+{
+    text-align: center;
+}
+.membership .panel:hover { box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4), 0 1px 5px rgba(130, 130, 130, 0.35); }
+.membership .panel-body
+{
+    padding: 0px;
+    text-align: center;
+}
+
+.membership .the-price
+{
+    background-color: rgba(220,220,220,.17);
+    box-shadow: 0 1px 0 #dcdcdc, inset 0 1px 0 #fff;
+    padding: 20px;
+    margin: 0;
+}
+.membership .panel-primary {
+    border-color: #ddd;
+}
+.membership .the-price h1
+{
+    line-height: 1em;
+    padding: 0;
+    margin: 0;
+}
+.membership .facility p{
+	background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+.membership .facility p{
+	padding: 10px;
+    background: transparent;
+    margin: 0;
+}
+.membership .subscript
+{
+    font-size: 25px;
+}
+
+/* CSS-only ribbon styles    */
+.membership .cnrflash
+{
+    /*Position correctly within container*/
+    position: absolute;
+    top: -9px;
+    right: 4px;
+    z-index: 1; /*Set overflow to hidden, to mask inner square*/
+    overflow: hidden; /*Set size and add subtle rounding  		to soften edges*/
+    width: 100px;
+    height: 100px;
+    border-radius: 3px 5px 3px 0;
+}
+.membership .cnrflash-inner
+{
+    /*Set position, make larger then 			container and rotate 45 degrees*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 145px;
+    height: 145px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -o-transform: rotate(45deg); /* Opera */
+    -moz-transform: rotate(45deg); /* Firefox */
+    -webkit-transform: rotate(45deg); /* Safari and Chrome */
+    -webkit-transform-origin: 100% 100%; /*Purely decorative effects to add texture and stuff*/ /* Safari and Chrome */
+    -ms-transform-origin: 100% 100%;  /* IE 9 */
+    -o-transform-origin: 100% 100%; /* Opera */
+    -moz-transform-origin: 100% 100%; /* Firefox */
+    background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.1) 50%), linear-gradient(0deg, transparent 0%, rgba(1,1,1,.2) 50%);
+    background-size: 4px,auto, auto,auto;
+    background-color: #aa0101;
+    box-shadow: 0 3px 3px 0 rgba(1,1,1,.5), 0 1px 0 0 rgba(1,1,1,.5), inset 0 -1px 8px 0 rgba(255,255,255,.3), inset 0 -1px 0 0 rgba(255,255,255,.2);
+}
+.membership .cnrflash-inner:before, .cnrflash-inner:after
+{
+    /*Use the border triangle trick to make  				it look like the ribbon wraps round it's 				container*/
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: -16px;
+    width: 0;
+    height: 0;
+    border: 8px solid #800000;
+}
+.membership .cnrflash-inner:before
+{
+    left: 1px;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+.membership .cnrflash-inner:after
+{
+    right: 0;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+.membership .cnrflash-label
+{
+    /*Make the label look nice*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(1,1,1,.8);
+    font-size: 0.95em;
+    font-weight: bold;
+    text-align: center;
+}
+.membership .card_main{
+    margin-left: 164px
+}
+.bronze .panel-heading{background-color: #cd7f32;border-bottom: #cd7f32;}
+.silver .panel-heading{background-color: #aaa9ad;border-bottom: #aaa9ad;;color: #fff}
+.gold .panel-heading{background-color: #f4d533;border-bottom: #f4d533;;color: #555}
+.tips .entry-header-title h3{
+    color: #333;
+    font-family: 'Rufina', serif;
+}
+.tips .tagline {
+    background-color: yellow;
+    font-style: italic; 
+    padding: 3px 10px;
+    font-weight: 700;    
+    display: inline-block;
+}
+.product-info-feature .inclues{
+    padding: 5px 25px;
+}
+.product-info-feature .inclues i{
+    margin: 0 10px 0 0;
+    color: #f07c29;
+}
+.product-info-feature .inclues a{
+    position: absolute;
+    right: 30%;
+    padding: 2px 7px;
+    background: #f07c29;
+    color: #fff;
+    border-radius: 3px;
+}
+.product-info-feature {
+    width: 100%;
+    display: inline-block;
+}
+/*==================
+	Responsive
+====================*/
+@media (max-width: 767px){
+	.product-area .owl-carousel .owl-item {
+	    padding: 0 49px;
+	}
+	.slider-area{
+		height: 179px;
+	}
+    .product-area .owl-carousel .owl-nav button{
+    	visibility: visible!important;opacity: 1!important;
+    }
+    .product-area .owl-carousel .owl-item{
+    	padding: 0 49px;
+    } 
+    .product-area .product-wrapper {
+    	height: auto!important;
+    }
+    .product-area .owl-carousel .owl-item img{
+    	height: 200px!important;
+    }
+    .bestseller-area .owl-carousel .owl-item{
+    	width: 162px!important;
+    } 
+    .order-tab-ul {
+        display: block!important;
+    }
+    .team-content h3 {
+	    font-size: 14px;
+	    margin-left: -5px;
+	}
+	.book-mobile {
+	    width: 50%;
+	    float: left;
+	    padding-left: 3px!important;
+	    padding-right: 3px!important;
+	}
+	.breadcrumbs-area-mobile {
+	    margin-bottom: 0!important;
+	}
+	.project-page .margin-mobile{
+		margin-bottom: 15px;
+	}
+}
+@media only screen and (max-width: 600px) {
+    .membership .card_main{
+        margin-left: 0px;
+    }
+}
+.add-addrs{
+    display: table;
+    margin: auto;
+    margin-top: 40px;   
+}
+.quiz-content{
+    border-bottom: 1px solid #ddd;
+}
+.quiz-content h4{
+    margin: 10px;
+}
+.line-clamp2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+.line-clamp3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+.header-mid-area .my-cart ul > li .cart-product .single-cart .cart-info h5 a,.header-mid-area .my-cart ul > li .cart-product .single-cart .cart-info h5 a{
+    text-decoration: none;
+}
+/*========================
+		Only Mobile
+==========================*/
+@media only screen and (max-width: 700px) and (min-width: 375px){
+	.mobile-side {
+	    display: none;
+	}	
+	.new-books{
+		border: solid 1px #f07c297d;
+	}
+}
