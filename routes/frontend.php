@@ -145,6 +145,11 @@ Route::get('/T&C', function () {
 
 
 
+Route::get('/Seller/Signup', function () {
+
+    return view('web.seller-signup');
+})->name('web.seller-signup');
+
 
 
 
