@@ -91,7 +91,7 @@
 												
 												<h4 style="display:flex; justify-content:space-between">
 													<a href="{{route('web.project_list_category',['category_id'=>encrypt($value->id)])}}">{{ $value->name }}</a>
-													<span>({{$value->count}})</span>
+													<span class="project-count">({{$value->count}})</span>
 												</h4>
 											</div>
 										</div>

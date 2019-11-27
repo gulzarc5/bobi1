@@ -26,6 +26,9 @@ Route::group(['namespace'=> 'Web','middleware'=>'web'], function(){
         Route::post('/logout', 'LoginController@logout')->name('user.logout');
 
         Route::get('/Forgot/Password', 'PagesController@forgotPasswordForm')->name('web.forgot_password_form');
+        Route::get('Become/Seller/Signup','PagesController@becomeSellerForm')->name('web.seller-signup');
+        Route::post('Become/Seller/Submit','RegisterController@becomeSellerSubmit')->name('web.seller-submit');
+
         Route::post('/Register/User', 'RegisterController@userRegister')->name('web.register');
         Route::get('Cart','CartController@viewCart')->name('web.view_cart');
        
@@ -145,10 +148,7 @@ Route::get('/T&C', function () {
 
 
 
-Route::get('/Seller/Signup', function () {
 
-    return view('web.seller-signup');
-})->name('web.seller-signup');
 
 
 

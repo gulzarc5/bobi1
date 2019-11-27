@@ -113,7 +113,15 @@ class ProjectController extends Controller
                         ->where('projects.approval_status',1)
                         ->where('projects.status',1);
         $specialization = DB::table('project_spalization')
-                                ->get();
+                        ->get();
+        foreach ($specialization as $key => $value) {
+            $value->count = DB::table('projects')
+                ->where('specialization_id',$value->id)
+                ->whereNull('projects.deleted_at')
+                ->where('projects.status',1)
+                ->where('projects.approval_status',1)
+                ->count();
+        }
 
         if (!empty($category_id)) {
             $project->where('specialization_id',$category_id);

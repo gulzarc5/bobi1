@@ -86,14 +86,26 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-3 col-md-3 col-sm-5 hidden-xs">
-							{{-- <div class="header-img pt-25">
-								<img src="{{asset('web/img/icons/shop.png')}}">
-								<a href="{{route('seller_login')}}"></i>sell on edujiyaan</a>
-							</div> --}}
-							<div class="header-img pt-25">
-								<img src="{{asset('web/img/icons/shop.png')}}">
-								<a href="{{route('web.seller-signup')}}"></i>Become A Seller</a>
-							</div>
+							@auth('buyer')
+								@if (Auth::guard('buyer')->user()->user_role == '1')
+									<div class="header-img pt-25">
+										<img src="{{asset('web/img/icons/shop.png')}}">
+										<a href="{{route('web.seller-signup')}}"></i>Become A Seller</a>
+									</div>
+								@else
+									<div class="header-img pt-25">
+										<img src="{{asset('web/img/icons/shop.png')}}">
+										<a href="{{route('seller_login')}}"></i>Seller Login</a>
+									</div>
+								@endif
+								
+							@else
+								<div class="header-img pt-25">
+									<img src="{{asset('web/img/icons/shop.png')}}">
+									<a href="{{route('seller_login')}}"></i>sell on edujiyaan</a>
+								</div>
+							@endauth
+							
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-4 col-xs-12">
 							<div class="logo-area text-center logo-xs-mrg">

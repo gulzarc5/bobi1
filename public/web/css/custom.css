@@ -477,3 +477,11 @@
 		border: solid 1px #f07c297d;
 	}
 }
+.project-count{
+    color: #333;
+    display: inline-block;
+    font-size: 14px;
+    position: absolute;
+    right: 4px;
+    font-weight: 300; 
+}

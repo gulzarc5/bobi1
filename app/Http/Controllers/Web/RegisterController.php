@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use App\User;
 use DB;
+use Auth;
 
 class RegisterController extends Controller
 {
@@ -65,6 +66,55 @@ class RegisterController extends Controller
             }else{
                 return redirect()->route('seller_login')->with('message','Seller Registered Successfully Please Login With Email Id With Password');           
             }
+        }else{
+            return redirect()->back()->with('error','Something Went Wrong Please Try Again');
+        }
+
+    }
+
+    public function becomeSellerSubmit(Request $request)
+    {
+        $validatedData = $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'gender' => 'required',
+        ]);
+        $user_id = Auth::guard('buyer')->id();
+        $user = User::where('id',$user_id)
+            ->update([
+            'name' => $request->input('name'),
+            'user_role' => 2,
+            'gender' => $request->input('gender')
+        ]);
+        if ($user) {
+                $books = 1;
+                $projects = 1;
+                $megazine = 1;
+                $quiz = 1;
+                if ($request->has('book') && !empty($books)) {
+                    $books = 2;
+                }
+                if ($request->has('project') && !empty($projects)) {
+                    $projects = 2;
+                }
+                if ($request->has('megazine') && !empty($megazine)) {
+                    $megazine = 2;
+                }
+                if ($request->has('quiz') && !empty($quiz)) {
+                    $quiz = 2;
+                }
+                DB::table('seller_deals')
+                    ->insert([
+                        'user_id' => $user_id,
+                        'book' => $books,
+                        'project' => $projects,
+                        'megazine' => $megazine,
+                        'quiz' => $quiz,
+                    ]);
+                DB::table('seller_bank_account')
+                        ->insert([
+                            'user_id' => $user_id,
+                        ]);
+            return redirect()->route('seller_login')->with('message','Seller Registration Has Been Successfull Please Logout Buyer Pannel And Log-in To Seller Pannel To see The Action');
         }else{
             return redirect()->back()->with('error','Something Went Wrong Please Try Again');
         }

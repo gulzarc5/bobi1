@@ -27,6 +27,9 @@ Route::get('/admin/login', 'Admin\AdminLoginController@showAdminLoginForm')->nam
 Route::post('/admin/login', 'Admin\AdminLoginController@adminLogin');
 Route::post('/admin/logout', 'Admin\AdminLoginController@logout')->name('admin.logout');
 
+Route::get('/admin/Change/Password/Form', 'Admin\AdminDeshboardController@changePasswordAdmin')->name('admin.change_password');
+Route::post('/admin/Change/Password/Submit', 'Admin\AdminDeshboardController@changePasswordAdminSubmit')->name('admin.change_password_submit');
+
 
 Route::get('City/list/{state_id}', 'Admin\Configuration\ConfigurationController@cityWithState')->name('city_fetch_with_state_id');
 

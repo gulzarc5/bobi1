@@ -146,6 +146,8 @@
                     </ul>
                   </li>
 
+                  <li><a href="{{route('admin.change_password')}}"><i class="fa fa-key" aria-hidden="true"></i>Change Password</a></li>
+
                 </ul>
               </div>
 

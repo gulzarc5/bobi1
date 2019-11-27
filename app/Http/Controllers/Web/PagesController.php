@@ -8,6 +8,7 @@ use DB;
 use Validator;
 use App\Mail\OrderMail;
 use Mail;
+use Auth;
 
 
 class PagesController extends Controller
@@ -79,4 +80,12 @@ class PagesController extends Controller
         Mail::to("gulzarc5@gmail.com")->send(new OrderMail($data));
         return redirect()->back()->with('message','Thanks For The Query We Get Back To You Soon');
     }
+
+    public function becomeSellerForm()
+    {
+        $user_id = Auth::guard('buyer')->id();
+        $user = DB::table('users')->where('id',$user_id)->first();
+
+        return view('web.seller-signup',compact('user'));
+    }    
 }
